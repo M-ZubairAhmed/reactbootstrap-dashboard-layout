@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "reactbootstrap-dashboard-layout",
+  "name": "React Bootstrap Dashboard Layout",
   "icons": [
     {
       "src": "favicon.ico",

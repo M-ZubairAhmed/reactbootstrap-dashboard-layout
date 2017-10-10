@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import HeaderLinks from '../Header/HeaderLinks.jsx'
-
-import imagine from 'assets/img/sidebar-3.jpg'
-import logo from 'assets/img/reactlogo.png'
+import logo from 'assets/img/logo.png'
 
 export default class Sidebar extends Component {
   constructor(props) {
@@ -30,12 +28,7 @@ export default class Sidebar extends Component {
       // backgroundImage: 'url(' + imagine + ')',
     }
     return (
-      <div
-        id="sidebar"
-        className="sidebar"
-        data-color="blue"
-        data-image={imagine}
-      >
+      <div id="sidebar" className="sidebar" data-color="blue" data-image={''}>
         <div className="sidebar-background" style={sidebarBackground} />
         <div className="logo">
           <a
@@ -50,7 +43,7 @@ export default class Sidebar extends Component {
             href="https://www.creative-tim.com"
             className="simple-text logo-normal"
           >
-            Creative Tim
+            Company Name
           </a>
         </div>
         <div className="sidebar-wrapper">
