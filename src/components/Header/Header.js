@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Navbar } from 'react-bootstrap'
 
-import HeaderLinks from './HeaderLinks.jsx'
+import HeaderLinks from './HeaderLinks'
 
-class Header extends Component {
+export default class Header extends React.Component {
   constructor(props) {
     super(props)
-    this.mobileSidebarToggle = this.mobileSidebarToggle.bind(this)
     this.state = {
       sidebarExists: false,
     }
   }
-  mobileSidebarToggle(e) {
+
+  mobileSidebarToggle = event => {
     if (this.state.sidebarExists === false) {
       this.setState({
         sidebarExists: true,
       })
     }
-    e.preventDefault()
+    event.preventDefault()
     document.documentElement.classList.toggle('nav-open')
     var node = document.createElement('div')
     node.id = 'bodyClick'
@@ -27,6 +27,7 @@ class Header extends Component {
     }
     document.body.appendChild(node)
   }
+
   render() {
     return (
       <Navbar fluid>
@@ -46,5 +47,3 @@ class Header extends Component {
     )
   }
 }
-
-export default Header

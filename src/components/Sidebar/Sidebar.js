@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-import HeaderLinks from '../Header/HeaderLinks.jsx'
-import logo from 'assets/img/logo.png'
+import HeaderLinks from '../Header/HeaderLinks'
+import logo from '../../assets/img/logo.png'
 
 export default class Sidebar extends Component {
   constructor(props) {

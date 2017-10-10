@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
-import Dashboard from 'views/Dashboard/Dashboard'
-import UserProfile from 'views/UserProfile/UserProfile'
-import TableList from 'views/TableList/TableList'
-import Typography from 'views/Typography/Typography'
-import Icons from 'views/Icons/Icons'
-
-import Header from 'components/Header/Header'
-import Sidebar from 'components/Sidebar/Sidebar'
+import Dashboard from './views/Dashboard/Dashboard'
+import UserProfile from './views/UserProfile/UserProfile'
+import TableList from './views/TableList/TableList'
+import Typography from './views/Typography/Typography'
+import Icons from './views/Icons/Icons'
+import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
 
 class App extends Component {
   constructor(props) {
