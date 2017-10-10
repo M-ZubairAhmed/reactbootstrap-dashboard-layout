@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
+import { Grid, Row, Col } from 'react-bootstrap'
 
-export default class TableList extends Component {
+export default class Records extends Component {
   render() {
     return (
       <div className="content">
-        <div className="container-fluid">
-          <div className="row">Table</div>
-        </div>
+        <Grid>
+          <Row>
+            <Col>{this.props.match.path}</Col>
+          </Row>
+        </Grid>
       </div>
     )
   }

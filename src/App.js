@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
-import Dashboard from './views/Dashboard/Dashboard'
+import Dashboard from './views/dashboard/Dashboard'
 import Analytics from './views/analytics/Analytics'
 import Records from './views/records/Records'
 import Header from './components/Header/Header'
