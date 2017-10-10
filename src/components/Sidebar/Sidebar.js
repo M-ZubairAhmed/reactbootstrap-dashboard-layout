@@ -11,18 +11,20 @@ export default class Sidebar extends Component {
       width: window.innerWidth,
     }
   }
+
   activeRoute(routeName) {
     return this.props.location.pathname.indexOf(routeName) > -1 ? 'active' : ''
   }
 
-  updateDimensions() {
+  updateDimensions = () => {
     this.setState({ width: window.innerWidth })
   }
 
   componentDidMount() {
     this.updateDimensions()
-    window.addEventListener('resize', this.updateDimensions.bind(this))
+    window.addEventListener('resize', this.updateDimensions)
   }
+
   render() {
     const sidebarBackground = {
       // backgroundImage: 'url(' + imagine + ')',
@@ -31,19 +33,16 @@ export default class Sidebar extends Component {
       <div id="sidebar" className="sidebar" data-color="blue" data-image={''}>
         <div className="sidebar-background" style={sidebarBackground} />
         <div className="logo">
-          <a
-            href="https://www.creative-tim.com"
-            className="simple-text logo-mini"
-          >
+          <a className="simple-text logo-mini">
             <div className="logo-img">
               <img src={logo} alt="logo_image" />
             </div>
           </a>
           <a
-            href="https://www.creative-tim.com"
+            href="https://mastermindapps.com"
             className="simple-text logo-normal"
           >
-            Company Name
+            RBs DLayout
           </a>
         </div>
         <div className="sidebar-wrapper">
@@ -55,48 +54,28 @@ export default class Sidebar extends Component {
                 className="nav-link"
                 activeClassName="active"
               >
-                <i className="pe-7s-graph" />
+                <i className="fa fa-tachometer" aria-hidden="true" />
                 <p>Dashboard</p>
               </NavLink>
             </li>
-            <li className={this.activeRoute('/user')}>
+            <li className={this.activeRoute('/analytics')}>
               <NavLink
-                to={'/user'}
+                to={'/analytics'}
                 className="nav-link"
                 activeClassName="active"
               >
-                <i className="pe-7s-user" />
-                <p>User Profile</p>
+                <i className="fa fa-line-chart" aria-hidden="true" />
+                <p>Analytics</p>
               </NavLink>
             </li>
-            <li className={this.activeRoute('/table')}>
+            <li className={this.activeRoute('/records')}>
               <NavLink
-                to={'/table'}
+                to={'/records'}
                 className="nav-link"
                 activeClassName="active"
               >
-                <i className="pe-7s-note2" />
-                <p>Table List</p>
-              </NavLink>
-            </li>
-            <li className={this.activeRoute('/typography')}>
-              <NavLink
-                to={'/typography'}
-                className="nav-link"
-                activeClassName="active"
-              >
-                <i className="pe-7s-news-paper" />
-                <p>Typography</p>
-              </NavLink>
-            </li>
-            <li className={this.activeRoute('/icons')}>
-              <NavLink
-                to={'/icons'}
-                className="nav-link"
-                activeClassName="active"
-              >
-                <i className="pe-7s-science" />
-                <p>Icons</p>
+                <i className="fa fa-th-list" aria-hidden="true" />
+                <p>Records</p>
               </NavLink>
             </li>
           </ul>

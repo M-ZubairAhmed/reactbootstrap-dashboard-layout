@@ -158,6 +158,7 @@ input:focus {
   position: relative;
   z-index: 4;
 }
+
 .sidebar .logo p {
   float: left;
   font-size: 20px;
@@ -165,6 +166,10 @@ input:focus {
   color: #ffffff;
   line-height: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.logo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .sidebar .logo a.logo-mini {
   float: left;

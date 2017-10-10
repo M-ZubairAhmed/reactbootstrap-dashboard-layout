@@ -4,12 +4,13 @@ import { NavItem, Nav, NavDropdown, MenuItem } from 'react-bootstrap'
 const HeaderLinks = () => (
   <div>
     <Nav>
-      <NavItem eventKey={-1} href="#">
+      {/* Nav item on right can be placed here */}
+      {/* <NavItem eventKey={-1} href="#">
         Nav
-      </NavItem>
-      <NavItem eventKey={-2} href="#">
+        </NavItem>
+        <NavItem eventKey={-2} href="#">
         Nav2
-      </NavItem>
+      </NavItem> */}
     </Nav>
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
