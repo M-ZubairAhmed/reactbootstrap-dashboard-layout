@@ -497,6 +497,14 @@ body > .navbar-collapse[data-color='purple']:after {
   font-size: 16px;
   border-radius: 0;
 }
+/*Custom setting for showing nav brand on right on mobile*/
+.navbar-brand {
+  float: right;
+}
+/*Custom setting for showing hamburger icon on mobile*/
+.navbar-toggle {
+  float: left;
+}
 .navbar .navbar-brand {
   font-weight: 400;
   margin: 5px 0;
@@ -883,8 +891,8 @@ body > .navbar-collapse[data-color='purple']:after {
     top: 0;
     height: 100%;
     width: 260px;
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
     z-index: 1032;
     visibility: visible;
     background-color: #999999;
@@ -892,11 +900,11 @@ body > .navbar-collapse[data-color='purple']:after {
     border-top: none;
     text-align: left;
     padding: 0;
-    -webkit-transform: translate3d(260px, 0, 0);
-    -moz-transform: translate3d(260px, 0, 0);
-    -o-transform: translate3d(260px, 0, 0);
-    -ms-transform: translate3d(260px, 0, 0);
-    transform: translate3d(260px, 0, 0);
+    -webkit-transform: translate3d(-260px, 0, 0);
+    -moz-transform: translate3d(-260px, 0, 0);
+    -o-transform: translate3d(-260px, 0, 0);
+    -ms-transform: translate3d(-260px, 0, 0);
+    transform: translate3d(-260px, 0, 0);
     -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -969,11 +977,11 @@ body > .navbar-collapse[data-color='purple']:after {
   }
   .nav-open .main-panel {
     left: 0;
-    -webkit-transform: translate3d(-260px, 0, 0);
-    -moz-transform: translate3d(-260px, 0, 0);
-    -o-transform: translate3d(-260px, 0, 0);
-    -ms-transform: translate3d(-260px, 0, 0);
-    transform: translate3d(-260px, 0, 0);
+    -webkit-transform: translate3d(260px, 0, 0);
+    -moz-transform: translate3d(260px, 0, 0);
+    -o-transform: translate3d(260px, 0, 0);
+    -ms-transform: translate3d(260px, 0, 0);
+    transform: translate3d(260px, 0, 0);
   }
   .navbar-toggle .icon-bar {
     display: block;
@@ -1273,8 +1281,8 @@ body > .navbar-collapse[data-color='purple']:after {
     position: fixed;
     opacity: 0;
     top: 0;
-    left: auto;
-    right: 250px;
+    left: 250px;
+    right: auto;
     content: '';
     z-index: 9999;
     overflow-x: hidden;
