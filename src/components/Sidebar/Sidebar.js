@@ -58,24 +58,24 @@ export default class Sidebar extends Component {
                 <p>Dashboard</p>
               </NavLink>
             </li>
-            <li className={this.activeRoute('/analytics')}>
+            <li className={this.activeRoute('/nextPage')}>
               <NavLink
-                to={'/analytics'}
+                to={'/nextPage'}
                 className="nav-link"
                 activeClassName="active"
               >
                 <i className="fa fa-line-chart" aria-hidden="true" />
-                <p>Analytics</p>
+                <p>Next Page</p>
               </NavLink>
             </li>
-            <li className={this.activeRoute('/records')}>
+            <li className={this.activeRoute('/morePages')}>
               <NavLink
-                to={'/records'}
+                to={'/morePages'}
                 className="nav-link"
                 activeClassName="active"
               >
                 <i className="fa fa-th-list" aria-hidden="true" />
-                <p>Records</p>
+                <p>More Pages</p>
               </NavLink>
             </li>
           </ul>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
 
-export default class Records extends Component {
+export default class MorePages extends Component {
   render() {
     return (
       <div className="content">

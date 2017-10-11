@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
 
-export default class Analytics extends Component {
+export default class NextPage extends Component {
   render() {
     return (
       <div className="content">
